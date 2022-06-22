@@ -4,16 +4,11 @@ a {
   color: #000;
 }
 
-#container {
-  width: 100%;
-}
-
 /* header */
 header {
   width: 100%;
   height: 80px;
   background-color: #fff;
-  /* background-color: #ddd; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,9 +17,9 @@ header {
   z-index: 1000;
 }
 
-/*  수정중 */
 header .logo {
   width: 30%;
+  padding-left: 10px;
 }
 
 header .nav {
@@ -38,77 +33,97 @@ header .nav ul {
 
 header .nav ul li a {
   font-weight: bold;
+  display: block;
+  padding: 32px;
+}
+
+header .nav ul li:hover {
+  background-color: orchid;
 }
 
 /* banner */
 #banner {
   width: 100%;
-  height: 856px;
-  background-color: #ddd;
+  /* height: 756px; */
+  background-color: rgb(255, 220, 226);
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  color: #444;
 }
 
-#banner p {}
+#banner .txt {
+  margin-top: 180px;
+}
 
-#banner h2 {}
+#banner .txt p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#banner .txt h2 {
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 100;
+}
 
 #banner img {
-  width: 300px;
+  width: 45%;
 }
-
-/* main */
-main {}
 
 /* ----- content  ---- */
-main #content {
-  width: 100%;
-  height: 733px;
-  /* background-color: #999; */
+#content {
+  /* background-color: #777; */
+  padding: 130px;
+}
+
+#content ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  justify-content: space-around;
 }
 
-main #content .box {
+#content ul li {
   width: 40%;
-  height: 266.5px;
-  padding: 50px 30px;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  margin: 2%;
+
+
+  /* padding: 50px; */
+  /* border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; */
 }
 
-main #content .box:nth-child(even) {
+/* #content ul li:nth-child(even) {
   border-right: none;
-}
+} */
 
-main #content .box:nth-child(3),
-main #content .box:nth-child(4) {
+/* #content ul li:nth-child(3),
+#content ul li:nth-child(4) {
   border-bottom: none;
-}
+} */
 
-main #content .box h3 {
+#content ul li h3 {
   font-size: 32px;
-  font-weight: bold;
-  padding-bottom: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
 }
 
-main #content .box p {
+#content ul li p {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.8;
+
 }
 
 /* ---- content2 ---- */
-main #content2 {
-  width: 100%;
-  height: 934px;
+#content2 {
   background-color: #888;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 311.333333px);
 }
 
-main #content2 .box h2 {
+#content2 .box h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -119,125 +134,110 @@ main #content2 .box h2 {
   display: none;
 }
 
-main #content2 .box:hover h2 {
+#content2 .box:hover h2 {
   display: block;
 }
 
-main #content2 .box img {
+#content2 .box img {
   width: 100%;
   height: 100%;
 }
 
-main #content2 .box1 {
+#content2 .box1 {
   grid-column: 1/3;
   grid-row: 1/3;
   position: relative;
 }
 
-main #content2 .box4 {
+#content2 .box4 {
   grid-column: 3/5;
 }
 
-main #content2 .box7 {
+#content2 .box7 {
   grid-column: 3/5;
 }
 
 /* ---- Business ---- */
-/* 사진비율 ... */
-main #Business {
-  width: 100%;
-  height: 2338px;
-  /* background-color: #777; */
-}
-
-main #Business .txt {
+#Business .txt {
   text-align: center;
   padding-top: 108px;
   padding-bottom: 96px;
 }
 
-main #Business .txt h2 {
+#Business .txt h2 {
   font-weight: bold;
   font-size: 3.5rem;
   margin-bottom: 24px;
 }
 
-main #Business .txt p {
+#Business .txt p {
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.8;
 }
 
-main #Business .boxs {
+#Business ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
-main #Business .boxs .box {
+#Business ul li {
+  width: 40%;
+  margin: 2%;
+}
+
+#Business ul li img {
+  width: 100%;
+}
+
+#Business ul li h3 {
+  margin-top: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-align: center;
-  padding-bottom: 40px;
-  margin-right: 30px;
 }
 
-main #Business .boxs .box:nth-child(even) {
-  margin-right: 0;
-}
-
-main #Business .box img {
-  width: 800px;
-  height: 850px;
-}
-
-main #Business .box h3 {
-  padding-top: 30px;
-  font-size: 1.5rem;
-  padding-bottom: 10px;
-}
-
-main #Business .box p {
+#Business ul li p {
+  margin-top: 15px;
+  line-height: 1.8;
   font-size: 18px;
-  line-height: 1.5;
+  text-align: center;
 }
+
 
 /* ---- Youtube ---- */
-main #Youtube {
-  width: 100%;
-  height: 1341px;
-  background-color: #eeeeee;
+#Youtube {
+  background-color: #f3f3f3;
+}
+
+#Youtube .txt {
+  padding-top: 100px;
+  margin-top: 150px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-main #Youtube .txt {
-  padding-top: 140px;
-  padding-left: 144px;
-  width: 40%;
+#Youtube .txt h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
 }
 
-main #Youtube .txt h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-main #Youtube .txt2 {
-  padding-top: 140px;
-  width: 40%;
-  padding-right: 144px;
-}
-
-main #Youtube .txt2 p {
+#Youtube .txt p {
+  font-weight: 300;
+  font-size: 1.5rem;
   line-height: 1.5;
-  font-size: 24px;
+  width: 800px;
 }
 
-main #Youtube .img {
+#Youtube .img {
   position: relative;
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 150px;
 }
 
-main #Youtube .img h2 {
+#Youtube .img h2 {
   position: absolute;
   color: #fff;
   left: 15%;
@@ -248,72 +248,137 @@ main #Youtube .img h2 {
   letter-spacing: 20px;
 }
 
-main #Youtube .img img {
-  width: 1413px;
+#Youtube .img img {
+  width: 1500px;
   height: 795px;
-
 }
+
 
 /* ---- Service ---- */
-main #Service {
-  width: 100%;
-  height: 945px;
-  /* background-color: #555; */
+#Service {
+  margin-top: 80px;
 }
 
-main #Service h1 {
+#Service h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  padding-top: 140px;
-  padding-bottom: 100px;
 }
 
-main #Service .boxs {
+#Service ul {
+  margin-top: 100px;
   display: flex;
 }
 
-main #Service .boxs .box {
-  width: 380px;
-  height: 508px;
-  margin: 10px;
-  background-color: #fff;
+#Service ul li {
+  margin: 1%;
   border: 1px solid #ddd;
 }
 
-main #Service .boxs .box img {
+#Service ul li img {
   width: 100%;
-  height: 70%;
+
 }
 
-main #Service .boxs .box h3 {
-  padding: 15px 20px;
+#Service ul li h3 {
+  padding: 15px;
+  margin-top: 25px;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-main #Service .boxs .box p {
-  padding: 10px 20px;
+#Service ul li p {
   line-height: 1.5;
+  padding: 15px;
 }
 
 /* ---- Location ---- */
-main #Location {
-  width: 100%;
-  height: 1216px;
-  background-color: #444;
+#Location {
+  /* background-color: #efefef; */
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Location h1 {
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#Location .location .tab {
+  margin-top: 80px;
+}
+
+#Location .location .tab ul {
+  display: flex;
+}
+
+#Location .location .tab ul li {
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#Location .location .tab ul li a {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+#Location .location .tab ul li:first-child a {
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+#Location .location img {
+  margin-top: 30px;
+}
+
+#Location .location .cont {
+  margin-top: 80px;
+}
+
+#Location .location .cont ul li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#Location .location .cont ul li:last-child {
+  border-bottom: 2px solid #000;
+}
+
+#Location .location .cont ul li h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#Location .location .cont ul li p {
+  margin-left: 80px;
 }
 
 /* footer */
 /* ---- contact ---- */
 footer #contact {
+  margin-top: 100px;
   width: 100%;
-  height: 487px;
+  height: 387px;
   text-align: center;
   position: relative;
   /* rgba */
-  background-color: rgba(105, 169, 197, 0.9);
-  /* background: url(images/img-bg.jpg) no-repeat; */
+  /* background: url(images/img-bg.jpg) no-repeat 50% / cover;
+  background-color: rgba(105, 169, 197, 0.9);*/
+}
+
+footer #contact img {
+  width: 100%;
+  height: 100%;
 }
 
 footer #contact .txt {
